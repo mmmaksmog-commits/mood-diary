@@ -2,7 +2,7 @@
 
 **Дневник настроения с поиском закономерностей.**
 
-### ▶️ [Открыть](https://mmmaksmog-commits.github.io/mood-diary/)
+### ▶️ [Открыть](https://mysik-portfolio.vercel.app/mood-diary/)
 
 Работает на телефоне и на ПК, без установки и регистрации.
 
@@ -30,4 +30,4 @@ python3 -m http.server 8000
 
 ---
 
-Часть [портфолио](https://mmmaksmog-commits.github.io/).
+Часть [портфолио](https://mysik-portfolio.vercel.app/).

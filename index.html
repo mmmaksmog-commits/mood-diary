@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Настроение</title>
+  <meta name="description" content="Дневник настроения: отмечайте день, факторы и заметки. Календарь и закономерности.">
+  <meta name="theme-color" content="#fff7ed">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="top">
+      <h1>Как вы<br><em>сегодня?</em></h1>
+      <p id="dateLabel"></p>
+    </header>
+
+    <section class="card entry">
+      <div class="moods" id="moods" role="radiogroup" aria-label="Настроение"></div>
+      <h3>Что повлияло?</h3>
+      <div class="factors" id="factors"></div>
+      <textarea id="note" rows="2" maxlength="300" placeholder="Пара слов о дне (необязательно)"></textarea>
+      <button class="btn" id="saveBtn">Сохранить</button>
+    </section>
+
+    <section class="card">
+      <div class="month-head">
+        <button class="nav-btn" id="prevM" aria-label="Предыдущий месяц">‹</button>
+        <h2 id="monthLabel"></h2>
+        <button class="nav-btn" id="nextM" aria-label="Следующий месяц">›</button>
+      </div>
+      <div class="cal" id="cal"></div>
+      <p class="hint">Нажмите на день, чтобы посмотреть или изменить запись</p>
+    </section>
+
+    <section class="card">
+      <h2>Закономерности</h2>
+      <div class="avg" id="avg"></div>
+      <div class="insights" id="insights"></div>
+    </section>
+  </main>
+  <div class="toast" id="toast" hidden></div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
